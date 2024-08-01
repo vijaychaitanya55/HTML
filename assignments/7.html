@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <style>
+        .form{
+            padding: 10px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            color: black;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="submit">
+            <label for="userName">UserName:
+                <input type="text" placeholder="Enter your full name">
+             </label>
+             <br><br>
+             <label for="Email">Email:
+                <input type="email" placeholder="Enter your email address" required>
+             </label>
+             <br><br>
+             <label for="Password">Password:
+                <input type="password" placeholder="Enter password" required maxlength="20">
+             </label>
+             <br><br>
+             <label for="confirmPassword">Password:
+                <input type="password" placeholder="confirm your password" required maxlength="20">
+             </label>
+             <br><br>
+             <label for="DOB">DOB:
+                <input type="date" required max="2006-07-31">
+             </label>
+             <br><br>
+             <label for="gender">Gender:
+                <select name="gender">
+                    <option value="Select your gender">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+             </label>
+             <br><br>
+            <label for="SubscriptionOption">SubscriptionOption:
+                <input type="radio" id="c1" name="subop" value="Free">
+                <label for="c1">Free</label>
+                <input type="radio" id="c2" name="subop" value="Basic">
+                <label for="c2">Basic</label>
+                <input type="radio" id="c3" name="subop" value="Premium">
+                <label for="c3">Premium</label>
+            </label>
+             <br><br>
+             <label for="Hobbies">Hobbies:
+                <input type="checkbox" value="Reading">Reading</input>
+                <input type="checkbox" value="Traveling">Traveling</input>
+                <input type="checkbox" value="Coding">Coding</input>
+                <input type="checkbox" value="Sports">Sports</input>
+             </label>
+             <br><br>
+             <label for="UploadFile">UploadFile:
+                <input type="file" accept="jpg,png">
+             </label>
+             <br><br>
+             <input type="submit" placeholder="Submit">
+        </form>
+    </div>
+</body>
+</html>

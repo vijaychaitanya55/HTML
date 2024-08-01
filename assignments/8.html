@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <style>
+        .feedback{
+            padding: 10px;
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="feedback">
+        <form action="submit">
+            <label for="userName">UserName:
+                <input type="text" placeholder="Enter your Name">
+             </label>
+             <br><br>
+             <label for="Email">Email:
+                <input type="email" placeholder="Enter your email address" required>
+             </label>
+             <br><br>
+             <label for="comments">Feedback:</label><br>
+             <textarea name="comments" placeholder="Enter your Feedback here"></textarea>
+             <br><br>
+             <label for="rating">Rate the service:
+                <input type="range" min="0" max="10">
+             </label>
+             <br><br>
+             <label for="feedbackType">Feedback Type:   
+                <div>
+                    <input type="radio" id="c1" name="feedbacktype" value="Compliment">
+                    <label for="c1">Compliment</label>
+                </div>
+                <div>
+                    <input type="radio" id="c2" name="feedbacktype" value="Complaint">
+                    <label for="c2">Complaint</label>
+                </div>
+                <div>
+                    <input type="radio" id="c3" name="feedbacktype" value="Suggestion">
+                    <label for="c3">Suggestion</label>
+                </div>
+            </label>
+            <br><br>
+            <label for="feedbackPolicy">Agree to feedback policy:
+                <input type="checkbox" value="Agree" required>Agree</input>
+            </label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
